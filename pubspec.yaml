@@ -49,12 +49,6 @@ dependencies:
   shared_preferences: ^2.3.2
   pretty_dio_logger: ^1.4.0
 
-  rest_client:
-    path: packages/rest_client
-
-  local_database:
-    path: packages/local_database
-
 dev_dependencies:
   flutter_test:
     sdk: flutter

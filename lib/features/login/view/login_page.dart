@@ -44,7 +44,7 @@ class _Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: BlocConsumer<LoginBloc, LoginState>(
-        listenWhen: (prev, next) => prev.isBusy != next.isBusy,
+        listenWhen: (prev, next) => prev.loading != next.loading,
         listener: (context, state) {
           state.notification?.when(
             insertSuccess: (message) {
@@ -68,7 +68,7 @@ class _Body extends StatelessWidget {
           return Stack(
             children: [
               _buildLoginForm(context, state.username, state.password),
-              if (state.isBusy) const LoadingPage(),
+              if (state.loading) const LoadingPage(),
             ],
           );
         },
