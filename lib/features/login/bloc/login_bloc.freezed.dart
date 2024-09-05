@@ -18,57 +18,45 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$LoginEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loadImageFromDB,
     required TResult Function(String username) changeUsername,
     required TResult Function(String password) changePassword,
     required TResult Function() login,
-    required TResult Function(DogImage dogImage) deleteImageFromDB,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loadImageFromDB,
     TResult? Function(String username)? changeUsername,
     TResult? Function(String password)? changePassword,
     TResult? Function()? login,
-    TResult? Function(DogImage dogImage)? deleteImageFromDB,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loadImageFromDB,
     TResult Function(String username)? changeUsername,
     TResult Function(String password)? changePassword,
     TResult Function()? login,
-    TResult Function(DogImage dogImage)? deleteImageFromDB,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_LoadImageFromDB value) loadImageFromDB,
     required TResult Function(_ChangeUsername value) changeUsername,
     required TResult Function(_ChangePassword value) changePassword,
     required TResult Function(_Login value) login,
-    required TResult Function(_DeleteImageFromDB value) deleteImageFromDB,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_LoadImageFromDB value)? loadImageFromDB,
     TResult? Function(_ChangeUsername value)? changeUsername,
     TResult? Function(_ChangePassword value)? changePassword,
     TResult? Function(_Login value)? login,
-    TResult? Function(_DeleteImageFromDB value)? deleteImageFromDB,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_LoadImageFromDB value)? loadImageFromDB,
     TResult Function(_ChangeUsername value)? changeUsername,
     TResult Function(_ChangePassword value)? changePassword,
     TResult Function(_Login value)? login,
-    TResult Function(_DeleteImageFromDB value)? deleteImageFromDB,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -93,129 +81,6 @@ class _$LoginEventCopyWithImpl<$Res, $Val extends LoginEvent>
 
   /// Create a copy of LoginEvent
   /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-abstract class _$$LoadImageFromDBImplCopyWith<$Res> {
-  factory _$$LoadImageFromDBImplCopyWith(_$LoadImageFromDBImpl value,
-          $Res Function(_$LoadImageFromDBImpl) then) =
-      __$$LoadImageFromDBImplCopyWithImpl<$Res>;
-}
-
-/// @nodoc
-class __$$LoadImageFromDBImplCopyWithImpl<$Res>
-    extends _$LoginEventCopyWithImpl<$Res, _$LoadImageFromDBImpl>
-    implements _$$LoadImageFromDBImplCopyWith<$Res> {
-  __$$LoadImageFromDBImplCopyWithImpl(
-      _$LoadImageFromDBImpl _value, $Res Function(_$LoadImageFromDBImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of LoginEvent
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-
-class _$LoadImageFromDBImpl implements _LoadImageFromDB {
-  const _$LoadImageFromDBImpl();
-
-  @override
-  String toString() {
-    return 'LoginEvent.loadImageFromDB()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadImageFromDBImpl);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() loadImageFromDB,
-    required TResult Function(String username) changeUsername,
-    required TResult Function(String password) changePassword,
-    required TResult Function() login,
-    required TResult Function(DogImage dogImage) deleteImageFromDB,
-  }) {
-    return loadImageFromDB();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loadImageFromDB,
-    TResult? Function(String username)? changeUsername,
-    TResult? Function(String password)? changePassword,
-    TResult? Function()? login,
-    TResult? Function(DogImage dogImage)? deleteImageFromDB,
-  }) {
-    return loadImageFromDB?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loadImageFromDB,
-    TResult Function(String username)? changeUsername,
-    TResult Function(String password)? changePassword,
-    TResult Function()? login,
-    TResult Function(DogImage dogImage)? deleteImageFromDB,
-    required TResult orElse(),
-  }) {
-    if (loadImageFromDB != null) {
-      return loadImageFromDB();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_LoadImageFromDB value) loadImageFromDB,
-    required TResult Function(_ChangeUsername value) changeUsername,
-    required TResult Function(_ChangePassword value) changePassword,
-    required TResult Function(_Login value) login,
-    required TResult Function(_DeleteImageFromDB value) deleteImageFromDB,
-  }) {
-    return loadImageFromDB(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_LoadImageFromDB value)? loadImageFromDB,
-    TResult? Function(_ChangeUsername value)? changeUsername,
-    TResult? Function(_ChangePassword value)? changePassword,
-    TResult? Function(_Login value)? login,
-    TResult? Function(_DeleteImageFromDB value)? deleteImageFromDB,
-  }) {
-    return loadImageFromDB?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_LoadImageFromDB value)? loadImageFromDB,
-    TResult Function(_ChangeUsername value)? changeUsername,
-    TResult Function(_ChangePassword value)? changePassword,
-    TResult Function(_Login value)? login,
-    TResult Function(_DeleteImageFromDB value)? deleteImageFromDB,
-    required TResult orElse(),
-  }) {
-    if (loadImageFromDB != null) {
-      return loadImageFromDB(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _LoadImageFromDB implements LoginEvent {
-  const factory _LoadImageFromDB() = _$LoadImageFromDBImpl;
 }
 
 /// @nodoc
@@ -288,11 +153,9 @@ class _$ChangeUsernameImpl implements _ChangeUsername {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loadImageFromDB,
     required TResult Function(String username) changeUsername,
     required TResult Function(String password) changePassword,
     required TResult Function() login,
-    required TResult Function(DogImage dogImage) deleteImageFromDB,
   }) {
     return changeUsername(username);
   }
@@ -300,11 +163,9 @@ class _$ChangeUsernameImpl implements _ChangeUsername {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loadImageFromDB,
     TResult? Function(String username)? changeUsername,
     TResult? Function(String password)? changePassword,
     TResult? Function()? login,
-    TResult? Function(DogImage dogImage)? deleteImageFromDB,
   }) {
     return changeUsername?.call(username);
   }
@@ -312,11 +173,9 @@ class _$ChangeUsernameImpl implements _ChangeUsername {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loadImageFromDB,
     TResult Function(String username)? changeUsername,
     TResult Function(String password)? changePassword,
     TResult Function()? login,
-    TResult Function(DogImage dogImage)? deleteImageFromDB,
     required TResult orElse(),
   }) {
     if (changeUsername != null) {
@@ -328,11 +187,9 @@ class _$ChangeUsernameImpl implements _ChangeUsername {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_LoadImageFromDB value) loadImageFromDB,
     required TResult Function(_ChangeUsername value) changeUsername,
     required TResult Function(_ChangePassword value) changePassword,
     required TResult Function(_Login value) login,
-    required TResult Function(_DeleteImageFromDB value) deleteImageFromDB,
   }) {
     return changeUsername(this);
   }
@@ -340,11 +197,9 @@ class _$ChangeUsernameImpl implements _ChangeUsername {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_LoadImageFromDB value)? loadImageFromDB,
     TResult? Function(_ChangeUsername value)? changeUsername,
     TResult? Function(_ChangePassword value)? changePassword,
     TResult? Function(_Login value)? login,
-    TResult? Function(_DeleteImageFromDB value)? deleteImageFromDB,
   }) {
     return changeUsername?.call(this);
   }
@@ -352,11 +207,9 @@ class _$ChangeUsernameImpl implements _ChangeUsername {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_LoadImageFromDB value)? loadImageFromDB,
     TResult Function(_ChangeUsername value)? changeUsername,
     TResult Function(_ChangePassword value)? changePassword,
     TResult Function(_Login value)? login,
-    TResult Function(_DeleteImageFromDB value)? deleteImageFromDB,
     required TResult orElse(),
   }) {
     if (changeUsername != null) {
@@ -448,11 +301,9 @@ class _$ChangePasswordImpl implements _ChangePassword {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loadImageFromDB,
     required TResult Function(String username) changeUsername,
     required TResult Function(String password) changePassword,
     required TResult Function() login,
-    required TResult Function(DogImage dogImage) deleteImageFromDB,
   }) {
     return changePassword(password);
   }
@@ -460,11 +311,9 @@ class _$ChangePasswordImpl implements _ChangePassword {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loadImageFromDB,
     TResult? Function(String username)? changeUsername,
     TResult? Function(String password)? changePassword,
     TResult? Function()? login,
-    TResult? Function(DogImage dogImage)? deleteImageFromDB,
   }) {
     return changePassword?.call(password);
   }
@@ -472,11 +321,9 @@ class _$ChangePasswordImpl implements _ChangePassword {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loadImageFromDB,
     TResult Function(String username)? changeUsername,
     TResult Function(String password)? changePassword,
     TResult Function()? login,
-    TResult Function(DogImage dogImage)? deleteImageFromDB,
     required TResult orElse(),
   }) {
     if (changePassword != null) {
@@ -488,11 +335,9 @@ class _$ChangePasswordImpl implements _ChangePassword {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_LoadImageFromDB value) loadImageFromDB,
     required TResult Function(_ChangeUsername value) changeUsername,
     required TResult Function(_ChangePassword value) changePassword,
     required TResult Function(_Login value) login,
-    required TResult Function(_DeleteImageFromDB value) deleteImageFromDB,
   }) {
     return changePassword(this);
   }
@@ -500,11 +345,9 @@ class _$ChangePasswordImpl implements _ChangePassword {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_LoadImageFromDB value)? loadImageFromDB,
     TResult? Function(_ChangeUsername value)? changeUsername,
     TResult? Function(_ChangePassword value)? changePassword,
     TResult? Function(_Login value)? login,
-    TResult? Function(_DeleteImageFromDB value)? deleteImageFromDB,
   }) {
     return changePassword?.call(this);
   }
@@ -512,11 +355,9 @@ class _$ChangePasswordImpl implements _ChangePassword {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_LoadImageFromDB value)? loadImageFromDB,
     TResult Function(_ChangeUsername value)? changeUsername,
     TResult Function(_ChangePassword value)? changePassword,
     TResult Function(_Login value)? login,
-    TResult Function(_DeleteImageFromDB value)? deleteImageFromDB,
     required TResult orElse(),
   }) {
     if (changePassword != null) {
@@ -579,11 +420,9 @@ class _$LoginImpl implements _Login {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loadImageFromDB,
     required TResult Function(String username) changeUsername,
     required TResult Function(String password) changePassword,
     required TResult Function() login,
-    required TResult Function(DogImage dogImage) deleteImageFromDB,
   }) {
     return login();
   }
@@ -591,11 +430,9 @@ class _$LoginImpl implements _Login {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loadImageFromDB,
     TResult? Function(String username)? changeUsername,
     TResult? Function(String password)? changePassword,
     TResult? Function()? login,
-    TResult? Function(DogImage dogImage)? deleteImageFromDB,
   }) {
     return login?.call();
   }
@@ -603,11 +440,9 @@ class _$LoginImpl implements _Login {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loadImageFromDB,
     TResult Function(String username)? changeUsername,
     TResult Function(String password)? changePassword,
     TResult Function()? login,
-    TResult Function(DogImage dogImage)? deleteImageFromDB,
     required TResult orElse(),
   }) {
     if (login != null) {
@@ -619,11 +454,9 @@ class _$LoginImpl implements _Login {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_LoadImageFromDB value) loadImageFromDB,
     required TResult Function(_ChangeUsername value) changeUsername,
     required TResult Function(_ChangePassword value) changePassword,
     required TResult Function(_Login value) login,
-    required TResult Function(_DeleteImageFromDB value) deleteImageFromDB,
   }) {
     return login(this);
   }
@@ -631,11 +464,9 @@ class _$LoginImpl implements _Login {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_LoadImageFromDB value)? loadImageFromDB,
     TResult? Function(_ChangeUsername value)? changeUsername,
     TResult? Function(_ChangePassword value)? changePassword,
     TResult? Function(_Login value)? login,
-    TResult? Function(_DeleteImageFromDB value)? deleteImageFromDB,
   }) {
     return login?.call(this);
   }
@@ -643,11 +474,9 @@ class _$LoginImpl implements _Login {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_LoadImageFromDB value)? loadImageFromDB,
     TResult Function(_ChangeUsername value)? changeUsername,
     TResult Function(_ChangePassword value)? changePassword,
     TResult Function(_Login value)? login,
-    TResult Function(_DeleteImageFromDB value)? deleteImageFromDB,
     required TResult orElse(),
   }) {
     if (login != null) {
@@ -662,184 +491,10 @@ abstract class _Login implements LoginEvent {
 }
 
 /// @nodoc
-abstract class _$$DeleteImageFromDBImplCopyWith<$Res> {
-  factory _$$DeleteImageFromDBImplCopyWith(_$DeleteImageFromDBImpl value,
-          $Res Function(_$DeleteImageFromDBImpl) then) =
-      __$$DeleteImageFromDBImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({DogImage dogImage});
-
-  $DogImageCopyWith<$Res> get dogImage;
-}
-
-/// @nodoc
-class __$$DeleteImageFromDBImplCopyWithImpl<$Res>
-    extends _$LoginEventCopyWithImpl<$Res, _$DeleteImageFromDBImpl>
-    implements _$$DeleteImageFromDBImplCopyWith<$Res> {
-  __$$DeleteImageFromDBImplCopyWithImpl(_$DeleteImageFromDBImpl _value,
-      $Res Function(_$DeleteImageFromDBImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of LoginEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? dogImage = null,
-  }) {
-    return _then(_$DeleteImageFromDBImpl(
-      dogImage: null == dogImage
-          ? _value.dogImage
-          : dogImage // ignore: cast_nullable_to_non_nullable
-              as DogImage,
-    ));
-  }
-
-  /// Create a copy of LoginEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $DogImageCopyWith<$Res> get dogImage {
-    return $DogImageCopyWith<$Res>(_value.dogImage, (value) {
-      return _then(_value.copyWith(dogImage: value));
-    });
-  }
-}
-
-/// @nodoc
-
-class _$DeleteImageFromDBImpl implements _DeleteImageFromDB {
-  const _$DeleteImageFromDBImpl({required this.dogImage});
-
-  @override
-  final DogImage dogImage;
-
-  @override
-  String toString() {
-    return 'LoginEvent.deleteImageFromDB(dogImage: $dogImage)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$DeleteImageFromDBImpl &&
-            (identical(other.dogImage, dogImage) ||
-                other.dogImage == dogImage));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, dogImage);
-
-  /// Create a copy of LoginEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$DeleteImageFromDBImplCopyWith<_$DeleteImageFromDBImpl> get copyWith =>
-      __$$DeleteImageFromDBImplCopyWithImpl<_$DeleteImageFromDBImpl>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() loadImageFromDB,
-    required TResult Function(String username) changeUsername,
-    required TResult Function(String password) changePassword,
-    required TResult Function() login,
-    required TResult Function(DogImage dogImage) deleteImageFromDB,
-  }) {
-    return deleteImageFromDB(dogImage);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loadImageFromDB,
-    TResult? Function(String username)? changeUsername,
-    TResult? Function(String password)? changePassword,
-    TResult? Function()? login,
-    TResult? Function(DogImage dogImage)? deleteImageFromDB,
-  }) {
-    return deleteImageFromDB?.call(dogImage);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loadImageFromDB,
-    TResult Function(String username)? changeUsername,
-    TResult Function(String password)? changePassword,
-    TResult Function()? login,
-    TResult Function(DogImage dogImage)? deleteImageFromDB,
-    required TResult orElse(),
-  }) {
-    if (deleteImageFromDB != null) {
-      return deleteImageFromDB(dogImage);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_LoadImageFromDB value) loadImageFromDB,
-    required TResult Function(_ChangeUsername value) changeUsername,
-    required TResult Function(_ChangePassword value) changePassword,
-    required TResult Function(_Login value) login,
-    required TResult Function(_DeleteImageFromDB value) deleteImageFromDB,
-  }) {
-    return deleteImageFromDB(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_LoadImageFromDB value)? loadImageFromDB,
-    TResult? Function(_ChangeUsername value)? changeUsername,
-    TResult? Function(_ChangePassword value)? changePassword,
-    TResult? Function(_Login value)? login,
-    TResult? Function(_DeleteImageFromDB value)? deleteImageFromDB,
-  }) {
-    return deleteImageFromDB?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_LoadImageFromDB value)? loadImageFromDB,
-    TResult Function(_ChangeUsername value)? changeUsername,
-    TResult Function(_ChangePassword value)? changePassword,
-    TResult Function(_Login value)? login,
-    TResult Function(_DeleteImageFromDB value)? deleteImageFromDB,
-    required TResult orElse(),
-  }) {
-    if (deleteImageFromDB != null) {
-      return deleteImageFromDB(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _DeleteImageFromDB implements LoginEvent {
-  const factory _DeleteImageFromDB({required final DogImage dogImage}) =
-      _$DeleteImageFromDBImpl;
-
-  DogImage get dogImage;
-
-  /// Create a copy of LoginEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$DeleteImageFromDBImplCopyWith<_$DeleteImageFromDBImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
 mixin _$LoginState {
   UIStatus get status => throw _privateConstructorUsedError;
   LoginNotification? get notification => throw _privateConstructorUsedError;
-  List<DogImage> get images => throw _privateConstructorUsedError;
-  bool get isBusy => throw _privateConstructorUsedError;
+  bool get loading => throw _privateConstructorUsedError;
   String get username => throw _privateConstructorUsedError;
   String get password => throw _privateConstructorUsedError;
   bool get isSuccess => throw _privateConstructorUsedError;
@@ -860,8 +515,7 @@ abstract class $LoginStateCopyWith<$Res> {
   $Res call(
       {UIStatus status,
       LoginNotification? notification,
-      List<DogImage> images,
-      bool isBusy,
+      bool loading,
       String username,
       String password,
       bool isSuccess});
@@ -887,8 +541,7 @@ class _$LoginStateCopyWithImpl<$Res, $Val extends LoginState>
   $Res call({
     Object? status = null,
     Object? notification = freezed,
-    Object? images = null,
-    Object? isBusy = null,
+    Object? loading = null,
     Object? username = null,
     Object? password = null,
     Object? isSuccess = null,
@@ -902,13 +555,9 @@ class _$LoginStateCopyWithImpl<$Res, $Val extends LoginState>
           ? _value.notification
           : notification // ignore: cast_nullable_to_non_nullable
               as LoginNotification?,
-      images: null == images
-          ? _value.images
-          : images // ignore: cast_nullable_to_non_nullable
-              as List<DogImage>,
-      isBusy: null == isBusy
-          ? _value.isBusy
-          : isBusy // ignore: cast_nullable_to_non_nullable
+      loading: null == loading
+          ? _value.loading
+          : loading // ignore: cast_nullable_to_non_nullable
               as bool,
       username: null == username
           ? _value.username
@@ -961,8 +610,7 @@ abstract class _$$LoginStateImplCopyWith<$Res>
   $Res call(
       {UIStatus status,
       LoginNotification? notification,
-      List<DogImage> images,
-      bool isBusy,
+      bool loading,
       String username,
       String password,
       bool isSuccess});
@@ -988,8 +636,7 @@ class __$$LoginStateImplCopyWithImpl<$Res>
   $Res call({
     Object? status = null,
     Object? notification = freezed,
-    Object? images = null,
-    Object? isBusy = null,
+    Object? loading = null,
     Object? username = null,
     Object? password = null,
     Object? isSuccess = null,
@@ -1003,13 +650,9 @@ class __$$LoginStateImplCopyWithImpl<$Res>
           ? _value.notification
           : notification // ignore: cast_nullable_to_non_nullable
               as LoginNotification?,
-      images: null == images
-          ? _value._images
-          : images // ignore: cast_nullable_to_non_nullable
-              as List<DogImage>,
-      isBusy: null == isBusy
-          ? _value.isBusy
-          : isBusy // ignore: cast_nullable_to_non_nullable
+      loading: null == loading
+          ? _value.loading
+          : loading // ignore: cast_nullable_to_non_nullable
               as bool,
       username: null == username
           ? _value.username
@@ -1033,30 +676,19 @@ class _$LoginStateImpl implements _LoginState {
   const _$LoginStateImpl(
       {this.status = const UIInitial(),
       this.notification,
-      final List<DogImage> images = const [],
-      this.isBusy = false,
+      this.loading = false,
       this.username = '',
       this.password = '',
-      this.isSuccess = false})
-      : _images = images;
+      this.isSuccess = false});
 
   @override
   @JsonKey()
   final UIStatus status;
   @override
   final LoginNotification? notification;
-  final List<DogImage> _images;
   @override
   @JsonKey()
-  List<DogImage> get images {
-    if (_images is EqualUnmodifiableListView) return _images;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_images);
-  }
-
-  @override
-  @JsonKey()
-  final bool isBusy;
+  final bool loading;
   @override
   @JsonKey()
   final String username;
@@ -1069,7 +701,7 @@ class _$LoginStateImpl implements _LoginState {
 
   @override
   String toString() {
-    return 'LoginState(status: $status, notification: $notification, images: $images, isBusy: $isBusy, username: $username, password: $password, isSuccess: $isSuccess)';
+    return 'LoginState(status: $status, notification: $notification, loading: $loading, username: $username, password: $password, isSuccess: $isSuccess)';
   }
 
   @override
@@ -1080,8 +712,7 @@ class _$LoginStateImpl implements _LoginState {
             (identical(other.status, status) || other.status == status) &&
             (identical(other.notification, notification) ||
                 other.notification == notification) &&
-            const DeepCollectionEquality().equals(other._images, _images) &&
-            (identical(other.isBusy, isBusy) || other.isBusy == isBusy) &&
+            (identical(other.loading, loading) || other.loading == loading) &&
             (identical(other.username, username) ||
                 other.username == username) &&
             (identical(other.password, password) ||
@@ -1091,15 +722,8 @@ class _$LoginStateImpl implements _LoginState {
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      status,
-      notification,
-      const DeepCollectionEquality().hash(_images),
-      isBusy,
-      username,
-      password,
-      isSuccess);
+  int get hashCode => Object.hash(runtimeType, status, notification, loading,
+      username, password, isSuccess);
 
   /// Create a copy of LoginState
   /// with the given fields replaced by the non-null parameter values.
@@ -1114,8 +738,7 @@ abstract class _LoginState implements LoginState {
   const factory _LoginState(
       {final UIStatus status,
       final LoginNotification? notification,
-      final List<DogImage> images,
-      final bool isBusy,
+      final bool loading,
       final String username,
       final String password,
       final bool isSuccess}) = _$LoginStateImpl;
@@ -1125,9 +748,7 @@ abstract class _LoginState implements LoginState {
   @override
   LoginNotification? get notification;
   @override
-  List<DogImage> get images;
-  @override
-  bool get isBusy;
+  bool get loading;
   @override
   String get username;
   @override

@@ -3,7 +3,6 @@ import 'package:boilerplate/core/bloc_core/ui_status.dart';
 import 'package:boilerplate/services/auth_service/auth_service.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:rest_client/rest_client.dart';
 
 part 'login_event.dart';
 part 'login_state.dart';
@@ -42,7 +41,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     try {
       emit(
         state.copyWith(
-          isBusy: true,
+          loading: true,
           notification: null
         ),
       );
@@ -53,7 +52,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       dynamic response = await _authService.login(payload);
       emit(
         state.copyWith(
-          isBusy: false,
+          loading: false,
           isSuccess: true,
           notification: _NotificationInsertSuccess(
             message: 'Login Successful',
@@ -64,7 +63,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     } catch (e, s) {
       emit(
         state.copyWith(
-          isBusy: false,
+          loading: false,
           notification: _NotificationInsertFailed(
             message: e.toString(),
           ),

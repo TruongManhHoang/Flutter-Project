@@ -73,7 +73,8 @@ Go to project root and execute the following command in terminal to get the requ
 ```cmd
 flutter pub get
 flutter pub run intl_utils:generate
-flutter pub run build_runner build --delete-conflicting-outputs
+dart run build_runner clean
+dart run build_runner build --delete-conflicting-outputs
 ```
 
 **Step 3:**
